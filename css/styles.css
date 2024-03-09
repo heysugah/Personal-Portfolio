@@ -1,0 +1,141 @@
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Branding & Navigation */
+#branding {
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+}
+
+.site-navigation {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-area, .navigation-menu {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.brand-logo i {
+    color: #007bff;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #333;
+}
+
+.navigation-menu {
+    list-style: none;
+    margin-left: auto;
+}
+
+.navigation-menu li {
+    padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0.5rem 0;
+}
+
+.intro-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.welcome-section, .bio-section, .professional-highlights, .projects-section {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bio-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.bio-section, .professional-highlights {
+    clear: both;
+}
+
+/* Projects */
+.project {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.project:last-child {
+    border: none;
+}
+
+.project h3 {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro-images img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .navigation-menu {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
